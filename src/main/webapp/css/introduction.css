@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+html {
+  font-size: 8rem;
+}
+body {
+  color: #383e45;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+
+/*タイトル*/
+/*.section-title {*/
+/*  display: inline-block;*/
+/*  font-size: 80rem;*/
+/*  margin-bottom: 60px;*/
+/*  border-bottom: solid 1px #383e45;*/
+ 
+/*}*/
+/*profileの内容*/
+/*.content-title {*/
+/*  font-size: 8rem;*/
+/*  margin: 10px 0;*/
+/*}*/
+
+/* タイトル */
+.section-title {
+  font-size: 2.5rem; /* 40px */
+  margin-bottom: 3.5rem; /* 56px */
+  border-bottom: solid 1px #383e45;
+  text-align: center;
+}
+
+/* 名前 */
+.content-title {
+  font-size: 1.5rem; /* 24px */
+  margin: 1rem 0; /* 上下16px */
+}
+
+/* リスト内の文字 */
+.text ul li {
+  font-size: 1.25rem; /* 20px（8の倍数ではないが中間で見やすい） */
+  line-height: 2rem;  /* 行間32pxで読みやすく */
+}
+
+
+
+
+
+
+/*ヘッダー　profile　favorite のセクション*/
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 80px;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+	background-color: rgb(25, 25, 25);
+  font-size: 0.5px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+  /*-------------------------------------------
+  Mainvisual
+  -------------------------------------------*/
+  #mainvisual img {
+    height: calc(100vh - 60px);
+  }
+
+  
